@@ -5,7 +5,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "shoestore-products-aspnetcore",
+          "Host": "shoestore-products-aspnetcore.azurewebsites.net",
           "Port": 80
         }
       ],
