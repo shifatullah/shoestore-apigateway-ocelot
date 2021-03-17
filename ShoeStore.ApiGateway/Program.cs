@@ -17,7 +17,10 @@ namespace ShoeStore.ApiGateway
             WebHost.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((host, config) =>
                 {
-                    config.AddJsonFile(Path.Combine("configuration", "configuration.json"), false, true);
+                    config
+                        .SetBasePath(host.HostingEnvironment.ContentRootPath)
+                        .AddJsonFile(Path.Combine("configuration", "configuration.json"), false, true)
+                        .AddJsonFile(Path.Combine($"configuration.{host.HostingEnvironment.EnvironmentName}.json"), false, true);
                 })
                 .UseStartup<Startup>();
     }

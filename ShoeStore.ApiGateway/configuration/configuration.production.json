@@ -2,14 +2,14 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/v1/products",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 51828
+          "Host": "shoestore-products-aspnetcore",
+          "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/getproducts",
+      "UpstreamPathTemplate": "/myproducts",
       "UpstreamHttpMethod": [
         "Get",
         "Put",
