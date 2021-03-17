@@ -16,6 +16,23 @@
         "Post",
         "Delete"
       ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/catalogues",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "shoestore-products-aspnetcore.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/mycatalogues",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Put",
+        "Post",
+        "Delete"
+      ]
     }
   ],
   "GlobalConfiguration": {
