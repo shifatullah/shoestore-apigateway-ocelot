@@ -20,7 +20,7 @@ namespace ShoeStore.ApiGateway
                     config
                         .SetBasePath(host.HostingEnvironment.ContentRootPath)
                         .AddJsonFile(Path.Combine("configuration", "configuration.json"), false, true)
-                        .AddJsonFile(Path.Combine($"configuration.{host.HostingEnvironment.EnvironmentName}.json"), false, true);
+                        .AddJsonFile(Path.Combine("configuration", $"configuration.{host.HostingEnvironment.EnvironmentName}.json"), false, true);
                 })
                 .UseStartup<Startup>();
     }
