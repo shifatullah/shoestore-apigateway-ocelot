@@ -2,7 +2,7 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/v1/products",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "shoestore-products-aspnetcore.azurewebsites.net",
@@ -19,7 +19,7 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/catalogues",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "shoestore-products-aspnetcore.azurewebsites.net",
